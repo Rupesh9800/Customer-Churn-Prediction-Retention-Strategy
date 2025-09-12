@@ -82,9 +82,9 @@ Higher-tier cities and satisfied customers contribute more to order growth — t
 
 ## 📌 Project Structure  
 ```plaintext
-📦 Customer-Churn-Analysis
+📦 Customer Churn Prediction & Retention Strategy
  ┣ 📂 data/                # Raw dataset
  ┣ 📂 images/              # Visualization images
- ┣ 📜 e-commerce-churn-analysis.ipynb
+ ┣ 📜 Customer Churn Prediction & Retention Strategy.ipynb
  ┣ 📜 README.md
  
