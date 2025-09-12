@@ -87,4 +87,4 @@ Higher-tier cities and satisfied customers contribute more to order growth — t
  ┣ 📂 images/              # Visualization images
  ┣ 📜 e-commerce-churn-analysis.ipynb
  ┣ 📜 README.md
- ┗ 📜 requirements.txt
+ 
