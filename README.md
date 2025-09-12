@@ -1,100 +1,90 @@
-# 📊 Customer Churn Prediction & Retention Strategy  
+# Customer Churn Prediction & Retention Strategy  
 
 ## 📌 Overview  
-This project performs a **comprehensive churn analysis** for an e-commerce business, aiming to identify key factors driving customer attrition and predict which customers are at risk of leaving. Using **EDA, feature engineering, and machine learning models**, the analysis delivers actionable insights for improving customer retention and business growth.  
+This project focuses on analyzing customer churn in an e-commerce platform, identifying key factors that influence churn, and proposing actionable retention strategies.  
+By leveraging data-driven insights, the goal is to improve customer satisfaction, reduce churn, and maximize revenue.
 
 ---
 
 ## 🎯 Objectives  
-- Identify **patterns and reasons** behind customer churn  
-- Analyze customer behavior based on demographics, tenure, spending, and satisfaction  
-- Build machine learning models to **predict churn probability**  
-- Recommend **targeted retention strategies** based on data insights  
+- Analyze patterns in customer behavior to identify churn drivers.  
+- Build predictive models to estimate churn probability.  
+- Propose strategies to improve retention and customer loyalty.  
+- Visualize churn trends for better business understanding.  
 
 ---
 
 ## 📂 Dataset  
-- **Entries:** 5,630 customers  
-- **Features:** 20 columns including tenure, preferred payment mode, satisfaction score, complaint history, spending behavior, and churn status  
-- **Key Stats:**  
-  - ~16.84% churn rate  
-  - Missing values handled with **KNN Imputer**  
-  - Encoded categorical variables using **One-Hot Encoding**  
+The dataset includes information about customers, their tenure, order amounts, city tiers, and satisfaction scores.  
+Key features analyzed:  
+- **Customer ID**  
+- **Tenure**  
+- **Estimated Monthly Spending**  
+- **City Tier**  
+- **Satisfaction Score**  
+- **Churn Status**
 
 ---
 
-## 🔧 Tools & Libraries  
-- **Language:** Python  
-- **Data Handling:** pandas, numpy  
-- **Visualization:** matplotlib, seaborn  
-- **Machine Learning:** scikit-learn (Logistic Regression, Decision Tree, Random Forest)  
-- **Metrics:** Accuracy, Precision, Recall, F1-score, Confusion Matrix  
+## 📊 Key Insights  
+
+### 📌 Overall Churn Percentage  
+![Percentage of Customers who Left](images/Percentage%20of%20Customers%20who%20Left.png)
+
+The churn rate is **16.84%**, meaning a significant portion of customers are leaving.  
+This highlights the need for effective **retention strategies** to maintain revenue stability.  
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)  
-
-### 🔍 Key Findings  
-- **Churn Rate:** ~16.84% of customers left the service  
-- **Tenure Impact:** High churn observed in the **first 18 months** – onboarding experience is crucial  
-- **Gender Differences:** Male customers show slightly higher churn → need gender-targeted engagement strategies  
-- **Satisfaction Link:** Higher satisfaction scores strongly correlate with lower churn  
-- **Spending Behavior:**  
-  - New customers show high spending variability → need early engagement  
-  - Spending drops around 30 months, indicating potential mid-tenure disengagement  
-
----
-
-## 📸 Key Visualizations  
-
-### Average Monthly Spending by Tenure  
-![Average Estimated Monthly Spending by Tenure](images/Average%20Estimated%20Monthly%20Spending%20by%20Tenure.png)
-
-### Churn by Satisfaction Score  
-![Churn by Satisfaction Score](images/Churn%20by%20Satisfaction%20Score.png)
-
-### Churn by Tenure Range  
+### 1️⃣ Customer Churn by Tenure Range  
 ![Customer Churn by Tenure Range](images/Customer%20Churn%20by%20Tenure%20Range.png)
 
-### Order Amount Hike by City Tier & Satisfaction Score  
+Customers with lower tenure have significantly higher churn rates.  
+This indicates the importance of early engagement and onboarding programs.  
+
+---
+
+### 2️⃣ Average Estimated Monthly Spending by Tenure  
+![Average Estimated Monthly Spending by Tenure](images/Average%20Estimated%20Monthly%20Spending%20by%20Tenure.png)
+
+Spending patterns increase with tenure, meaning retaining long-term customers directly impacts revenue growth.  
+
+---
+
+### 3️⃣ Churn by Satisfaction Score  
+![Churn by Satisfaction Score](images/Churn%20by%20Satisfaction%20Score.png)
+
+Dissatisfied customers are much more likely to churn, highlighting the need for feedback systems and proactive support.  
+
+---
+
+### 4️⃣ Order Amount Hike by City Tier & Satisfaction  
 ![Order Amount Hike by City Tier and Satisfaction Score](images/Order%20Amount%20Hike%20by%20City%20Tier%20and%20Satisfaction%20Score.png)
 
----
-
-## 🤖 Model Development  
-- **Algorithms Used:**  
-  - Logistic Regression  
-  - Decision Tree Classifier  
-  - Random Forest Classifier (best performing)  
-- **Outcome:** Identified **923 high-risk customers** likely to churn  
+Higher-tier cities and satisfied customers contribute more to order growth — these should be the primary focus of retention campaigns.  
 
 ---
 
-## 💡 Recommendations  
-- **Early Engagement:** Improve onboarding and offer early incentives to reduce first-18-month churn  
-- **Customer Feedback:** Actively collect and act on feedback from customers who leave early  
-- **Targeted Offers:** Personalize discounts and offers for high-risk segments (short tenure + high spending)  
-- **Loyalty Programs:** Reward long-term customers to sustain engagement  
-- **Demographic-Specific Interventions:** Focus on senior citizens and customers without partners/dependents  
-- **Service Optimization:** Bundle services or offer flexible plans to improve satisfaction  
+## 🛠 Tech Stack  
+- **Python** (Pandas, Matplotlib, Seaborn)  
+- **Jupyter Notebook** for EDA & Visualization  
+- **Machine Learning** (Logistic Regression, Decision Tree) for Churn Prediction  
 
 ---
 
-## 🚀 Future Scope  
-- Deploy a **churn prediction dashboard** for real-time monitoring  
-- Use advanced models like **XGBoost / LightGBM** for higher accuracy  
-- Integrate customer feedback text analysis (NLP) for richer insights  
+## 🚀 Retention Strategy Recommendations  
+- **Personalized Onboarding** for new customers (0–6 months tenure).  
+- **Targeted Offers & Discounts** for medium-risk customers.  
+- **Customer Support Enhancements** to improve satisfaction scores.  
+- **City-Specific Campaigns** focusing on Tier 1 cities for higher ROI.  
 
 ---
 
-## 🖥️ How to Run  
-
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/Rupesh9800/customer-churn-prediction.git
-   cd customer-churn-prediction
-
-## 👤 Author
-Rupesh Varma
-📧 rupeshvarma6296@gmail.com
-🔗 LinkedIn
+## 📌 Project Structure  
+```plaintext
+📦 Customer-Churn-Analysis
+ ┣ 📂 data/                # Raw dataset
+ ┣ 📂 images/              # Visualization images
+ ┣ 📜 e-commerce-churn-analysis.ipynb
+ ┣ 📜 README.md
+ ┗ 📜 requirements.txt
