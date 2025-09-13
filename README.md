@@ -68,7 +68,28 @@ Higher-tier cities and satisfied customers contribute more to order growth — t
 ## 🛠 Tech Stack  
 - **Python** (Pandas, Matplotlib, Seaborn)  
 - **Jupyter Notebook** for EDA & Visualization  
-- **Machine Learning** (Logistic Regression, Decision Tree) for Churn Prediction  
+- **Machine Learning** (Logistic Regression, Decision Tree, Random Forest) for Churn Prediction  
+
+---
+## 📈 Model Performance  
+
+| **Model**              | **Accuracy** | **Precision (Churn=1)** | **Recall (Churn=1)** | **F1 Score** |
+|------------------------|-------------|------------------------|--------------------|-------------|
+| Logistic Regression    | 0.89        | 0.72                  | 0.53              | 0.61        |
+| Decision Tree          | 0.95        | 0.82                  | 0.87              | 0.84        |
+| **Random Forest** ✅   | **0.97**    | **0.96**              | **0.84**          | **0.89**    |
+
+**Key Takeaway:**  
+✅ **Random Forest** selected as the final model for its **high accuracy (97%)** and **balanced recall (84%)**, ensuring better churn prediction with minimal false negatives.  
+
+---
+
+## 🏁 Conclusion  
+- **Churn Prediction Success:** Achieved **97% model accuracy** with Random Forest.  
+- **Key Finding:** Highest churn observed in the **first 18 months** — critical period for retention efforts.  
+- **Customer Insights:** Satisfaction score and spending behavior are strong indicators of churn risk.  
+- **Actionable Outcome:** Use churn predictions to **personalize engagement, improve onboarding, and design loyalty programs**.  
+- **Business Impact:** Enables **proactive customer retention**, potentially reducing churn by double digits and increasing long-term revenue.  
 
 ---
 
@@ -80,11 +101,13 @@ Higher-tier cities and satisfied customers contribute more to order growth — t
 
 ---
 
-## 📌 Project Structure  
+## 📁 Project Structure  
+
 ```plaintext
 📦 Customer Churn Prediction & Retention Strategy
- ┣ 📂 data/                # Raw dataset
- ┣ 📂 images/              # Visualization images
+ ┣ 📂 data/                               # Raw dataset
+ ┣ 📂 images/                             # Visualization images
  ┣ 📜 Customer Churn Prediction & Retention Strategy.ipynb
- ┣ 📜 README.md
+ ┣ 📜 Customer_Churn_Presentation.pdf     # Final Presentation
+ ┣ 📜 README.md                           # Project Documentation
  
